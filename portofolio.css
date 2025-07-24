@@ -1,0 +1,218 @@
+:root {
+    --falu-red: #6f1d1bff;
+    --lion: #bb9457ff;
+    --bistre: #432818ff;
+    --brown: #99582aff;
+    --peach: #ffe6a7ff;
+}
+
+body {
+    margin: 0;
+    background-color: var(--peach);
+    color: var(--bistre);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+}
+* {
+    box-sizing: border-box;
+}
+.topnav {
+    background-color: var(--falu-red);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(67, 40, 24, 0.08);
+    border-bottom: 2px solid var(--lion);
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--peach);
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, color 0.2s;
+}
+.topnav a:hover {
+    background-color: var(--lion);
+    color: var(--falu-red);
+}
+.topnav-right {
+    float: right;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, var(--lion) 0%, var(--peach) 100%);
+    padding: 32px 0;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--falu-red);
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px rgba(67, 40, 24, 0.07);
+    border-radius: 0 0 16px 16px;
+}
+.header img {
+    border-radius: 50%;
+    border: 4px solid var(--falu-red);
+    box-shadow: 0 2px 8px rgba(67, 40, 24, 0.12);
+}
+.header span {
+    margin-left: 24px;
+    color: var(--bistre);
+    font-size: 1em;
+    font-weight: 600;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+}
+.content {
+    background-color: var(--peach);
+    padding: 32px;
+    float: left;
+    width: 66.66%;
+    color: var(--bistre);
+    box-shadow: 0 2px 12px rgba(67, 40, 24, 0.07);
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+.content h1, .content h2 {
+    color: var(--falu-red);
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+.projects-list, .hobbies-list {
+    padding-left: 20px;
+}
+.projects-list li, .hobbies-list li {
+    margin-bottom: 8px;
+    color: var(--brown);
+    font-weight: 500;
+}
+.sidebar {
+    float: left;
+    width: 33.33%;
+    background-color: var(--lion);
+    padding: 24px;
+    color: var(--bistre);
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(67, 40, 24, 0.07);
+}
+.sidebar h3 {
+    color: var(--falu-red);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 18px;
+}
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+.sidebar ul li a {
+    color: var(--bistre);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover {
+    color: var(--falu-red);
+    text-decoration: underline;
+}
+.sidebar p, .sidebar a {
+    color: var(--brown);
+    font-size: 1em;
+}
+.footer {
+    padding: 24px;
+    text-align: center;
+    background: var(--falu-red);
+    color: var(--peach);
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -2px 12px rgba(67, 40, 24, 0.07);
+}
+.footer a {
+    color: var(--lion);
+    text-decoration: underline;
+    font-weight: 600;
+}
+section {
+    margin-bottom: 32px;
+}
+form label {
+    color: var(--falu-red);
+    font-weight: 600;
+}
+form input, form textarea, form select, form button {
+    font-family: inherit;
+    font-size: 1em;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="color"],
+form input[type="date"],
+form input[type="file"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--lion);
+    background-color: var(--peach);
+    color: var(--bistre);
+    box-shadow: 0 1px 4px rgba(67, 40, 24, 0.05);
+    transition: border 0.2s;
+}
+form input:focus, form textarea:focus, form select:focus {
+    border-color: var(--falu-red);
+    outline: none;
+}
+form button {
+    background-color: var(--lion);
+    color: var(--falu-red);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(67, 40, 24, 0.08);
+    transition: background 0.2s, color 0.2s;
+}
+form button:hover {
+    background-color: var(--falu-red);
+    color: var(--peach);
+}
+form input[type="checkbox"] {
+    accent-color: var(--falu-red);
+}
+@media (max-width: 900px) {
+    .content, .sidebar {
+        width: 100%;
+        float: none;
+        margin-bottom: 18px;
+    }
+    .row {
+        display: block;
+    }
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header {
+        flex-direction: column;
+        padding: 24px 0;
+    }
+}

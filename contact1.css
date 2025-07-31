@@ -1,0 +1,103 @@
+ :root {
+            --falu-red: #6f1d1bff;
+            --lion: #bb9457ff;
+            --bistre: #432818ff;
+            --brown: #99582aff;
+            --peach: #ffe6a7ff;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--peach);
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            max-width: 600px;
+            margin: 40px auto;
+            background: var(--lion);
+            padding: 32px 28px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(67, 40, 24, 0.15);
+            border: 2px solid var(--brown);
+        }
+        h2 {
+            text-align: center;
+            color: var(--falu-red);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        p {
+            color: var(--bistre);
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: var(--bistre);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="color"],
+        input[type="date"],
+        textarea,
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border-radius: 6px;
+            border: 1.5px solid var(--brown);
+            background: var(--peach);
+            font-size: 1rem;
+            color: var(--bistre);
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+        input:focus,
+        textarea:focus {
+            border-color: var(--falu-red);
+            outline: none;
+        }
+        input[type="color"] {
+            padding: 2px;
+            height: 40px;
+            border: none;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(90deg, var(--falu-red), var(--brown));
+            color: var(--peach);
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(67, 40, 24, 0.10);
+            transition: background 0.2s, transform 0.1s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, var(--brown), var(--falu-red));
+            transform: translateY(-2px) scale(1.03);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+        input[type="checkbox"] {
+            accent-color: var(--falu-red);
+            margin-right: 8px;
+        }
+        @media (max-width: 700px) {
+            section {
+                padding: 18px 8px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
